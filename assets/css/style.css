@@ -1,26 +1,25 @@
-
-.main-bg{
+.main-bg {
   background-image: url(/assets/img/confetti-doodles.svg);
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
 }
 
-.white-bg{
+.white-bg {
   background: var(--white-color);
 }
 
-.main-content{
+.main-content {
   max-width: 120rem;
   margin: 0 auto;
-  padding: var(--gap);
+  padding: 8rem var(--gap);
 }
 
-.section{
+.section {
   min-height: 100vh;
 }
 
-.menu{
+.menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,7 +29,7 @@
   border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
-.menu-content{
+.menu-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,28 +37,28 @@
   padding-bottom: 0;
 }
 
-.menu h1{
+.menu h1 {
   font-size: 2.3rem;
   color: var(--primary-color);
 }
 
-.menu h1 a{
+.menu h1 a {
   color: inherit;
 }
 
-.menu ul{
+.menu ul {
   list-style: none;
   display: flex;
 }
 
-.menu ul li a{
+.menu ul li a {
   display: block;
   padding: 2rem;
   font-size: 1.8rem;
   position: relative;
 }
 
-.menu ul li a::after{
+.menu ul li a::after {
   content: '';
   position: absolute;
   bottom: 1rem;
@@ -70,36 +69,92 @@
   transition: all 300ms ease-in-out;
 }
 
-.menu ul li a:hover::after{
+.menu ul li a:hover::after {
   width: 50%;
 }
 
-.menu-spacing{
+.menu-spacing {
   height: 6.5rem;
 }
 
-.intro-content{
+.intro-content {
   position: relative;
   top: -4.5rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.intro-text-content, .intro-img{
+.intro-text-content, .intro-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
 }
 
-.intro-text-content h2{
+.intro-text-content h2 {
   text-transform: uppercase;
   font-size: 4.5rem;
   margin-bottom: 4rem;
 }
 
-.intro-img img{
+.intro-img img {
   max-width: 100%;
   height: auto;
+}
+
+.top3-content {
+  max-width: 64rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.grid-gallery-content {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.grid-gallery-text-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: var(--gap);
+  counter-reset: grid-counter;
+}
+
+.grid-gallery-text-content h3 {
+  position: relative;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+}
+
+.grid-gallery-text-content h3::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  font-size: 6rem;
+  font-style: italic;
+  top: -1rem;
+  left: -1rem;
+  transform: rotate(5deg);
+}
+
+.gallery-img{
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img img{
+  transition: all 300ms ease-in-out; 
+}
+
+.gallery-img img:hover{
+  transform:translate(3%,3%) scale(1.2) rotate(5deg); 
 }
