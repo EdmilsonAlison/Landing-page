@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /*
 font-family: 'Montserrat', sans-serif;
@@ -55,4 +56,27 @@ a{
 
 p{
   margin-bottom: 3rem;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption{
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+table td, table th{
+  white-space: nowrap;
+  padding: 1rem;
+  text-align: left;
+  border: 0.1rem solid var(--light-gray-color);
+}
+
+table tfoot td, table th{
+  background-color: var(--light-gray-color);
 }
