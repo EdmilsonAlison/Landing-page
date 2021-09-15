@@ -239,6 +239,7 @@ body .full-width {
 @media(max-width: 80rem) {
   .intro-content, .grid-gallery-text-content {
     grid-template-columns: 1fr;
+    display: block;
   }
   .gallery-img {
     width: 100%;
@@ -325,6 +326,7 @@ body .full-width {
   }
   .intro-content, .grid-gallery-text-content {
     grid-template-columns: 1fr;
+    display: block;
   }
   .gallery-img {
     width: 100%;
