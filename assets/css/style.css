@@ -236,10 +236,9 @@ body .full-width {
   display: none;
 }
 
-@media(max-width: 80rem) {
+@media(max-width: 45rem) {
   .intro-content, .grid-gallery-text-content {
     grid-template-columns: 1fr;
-    display: block;
   }
   .gallery-img {
     width: 100%;
@@ -326,7 +325,6 @@ body .full-width {
   }
   .intro-content, .grid-gallery-text-content {
     grid-template-columns: 1fr;
-    display: block;
   }
   .gallery-img {
     width: 100%;
